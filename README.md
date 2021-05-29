@@ -1,1 +1,1 @@
-# comic-store
+# Comic-store

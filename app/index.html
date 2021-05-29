@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cómic Store</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/12ae5353ae.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-custom">
+            <div class="container">
+                <span class="navbar-brand text-purple">CÓMIC STORE</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#company">Compañías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#superhero">Superhéroes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mt-5 mb-5">
+            <div>
+                <a class="btn btn-default btn-email" href="#contact-us" aria-label="Settings">
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <article class="row" id="company">
+                <h1 class="text-left title-company">COMPAÑÍAS</h1>
+                <div class="card-group pt-3 group-cards">
+                    <div class="card m-3 shadow p-2 mb-5 bg-body rounded">
+                        <div class="card-body card-back dc"></div>
+                    </div>
+                    <div class="card p-2 m-3 shadow mb-5 bg-body rounded ">
+                        <div class="card-body card-back marvel"></div>
+                    </div>
+                    <div class="card p-2 m-3 shadow mb-5 bg-body rounded">
+                        <div class="card-body card-back star-wars" id="card-sw"></div>
+                    </div>
+                </div>
+                <div id="carouselCompanyInterval" class="carousel slide carrousel-cards" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="card m-3 shadow p-2 mb-5 bg-body rounded">
+                                <div class="card-body card-back dc"> </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="card p-2 m-3 shadow mb-5 bg-body rounded ">
+                                <div class="card-body card-back marvel"></div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card p-2 m-3 shadow mb-5 bg-body rounded">
+                                <div class="card-body card-back star-wars"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCompanyInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCompanyInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+                      
+            <hr class="divider">
+            
+            <article class="row heroes" id="superhero">
+                <div class="col-lg-7 col-md-12 p-5">
+                    <h1 class="text-left title-hero">SUPERHÉROES</h1>
+                    <div class="pt-3">
+                        <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into
+                            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                            with the release of
+                            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like
+                            Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type and
+                            scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                            the leap into
+                            electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 d-none d-sm-block p-5">
+                    <!-- Carrusel-->
+                    <div id="carouselHeroes" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="../assets/img/aquaman.png" class="d-block w-100" alt="Aquaman" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="../assets/img/batman.png" class="d-block   w-100" alt="Batman" loading="lazy">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/linterna-verde.png" class="d-block w-100" alt="Lintena Verde"
+                                    loading="lazy">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/wolverine.png" class="d-block  w-100" alt="Wolwerine"
+                                    loading="lazy">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeroes"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselHeroes"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- End Carrusel-->
+                </div>
+            </article>
+
+            <hr class="divider">
+
+            <article class="row">
+                <div class="col-md-2 col-sm-1 d-none d-sm-block"></div>
+                <div class="col-md-8 col-sm-10 col-xs-12 contact-form p-3">
+                    <h1 class="text-left pt-5 pb-2 fw-bold text-white">CONTACTO</h1>
+                    <form id="contact-us" method="post" action="#">
+                        <div class="mb-3">
+                            <input type="text" name="name" id="name" required="required" class="form-control input-form"
+                                placeholder="Tu nombre" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="mail" id="mail" required="required"
+                                class="form-control input-form" placeholder="Tu mejor Email" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="subject" id="subject" required="required"
+                                class="form-control input-form"
+                                placeholder="Asunto: ¡cuéntame de que vá tu consulta!" />
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" id="message" class="form-control input-form"
+                                placeholder="Mensaje::¡explícame con detalle que necesitas!"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" id="submit" name="submit"
+                                class="btn btn-form pull-right mt-3">Enviar</button>
+                        </div>
+                        <div class="clear"></div>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sd-1 d-none d-sm-block"></div>
+            </article>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <img src="../assets/img/logo_small_footer.png" class="w-50"></span>
+                        <span class="d-block mt-2">Copyright &copy; Cómic Store
+                            <script>document.write(new Date().getFullYear())</script>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <ul class="product">
+                            <span>Productos</span>
+                            <li>
+                                <a href="#">Cómic Vintage</a>
+                            </li>
+                            <li>
+                                <a href="#">Colecciones</a>
+                            </li>
+
+                            <li>
+                                <a href="#">ültimas novedades</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <ul class="contact">
+                            <span>Contacto</span>
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit amet, vero omnis vocibus</a>
+                            </li>
+
+                            <li>
+                                <a href="#">+999 999 999</a>
+                            </li>
+
+                            <li>
+                                <a href="#">comic-store@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                        <ul class="social">
+                            <span>Social</span>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="#"><i class="fa fa-github fa-2x"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="services/comic-store.service.js"></script>
+    <script src="views/comic-store.view.js"></script>
+    <script src="controllers/comic-store.controller.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+
+</html>

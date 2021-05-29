@@ -1,0 +1,256 @@
+/* GENERAL */
+body{
+    color:#58517A;
+    font-family: 'Varela Round', sans-serif;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+/* HR */
+.divider{
+    margin-top:60px;
+    margin-bottom:60px;
+    color:#CEA355;
+}
+
+/* NAV */
+
+nav.navbar-custom  {
+    background-color: #58517A!important;
+}
+nav.navbar-custom a {
+    color:white;
+    font-weight: bold;
+}
+nav.navbar-custom a:hover{
+    color:#BDCCEB;
+    font-weight: bold;
+   
+}
+.nav-logo{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+.navbar-toggler-icon{
+    color:white!important;
+ }
+.text-purple{
+    color:#BDCCEB;
+    font-weight: bold;
+}
+
+/* COMPANY */
+
+.title-company{
+    color:#4CAF50;
+    letter-spacing:2px;
+    font-weight:bold;
+    margin-left:18px;
+}
+.btn-card{
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+.btn-card:hover{
+    background-color: #4CAF50;
+    color:white;
+}
+.btn-star-wars{
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    width:100%;
+    display:block;
+    text-align: center;
+    padding: 5px 0px;
+    margin-top:25px;
+    text-decoration :none;
+}
+.btn-star-wars:hover{
+    background-color: #4CAF50;
+    color:white;
+}
+
+.card-back {
+    background-color: #F1F5FA;
+}
+
+/* HERO */
+
+.heroes{
+     background-color:#BDCCEB;
+}
+.title-hero{
+    color:white;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+/* FLOAT BTN CONTACT*/
+
+.btn-email{
+    background-color:#F9D172;
+    color: #ffffff; 
+	border-radius: 50%; 
+	letter-spacing: 2px; 
+    padding: 18px; 
+	position: fixed;
+	top: 68px;
+	right: 5px;
+	transition: all 300ms ease 0ms;
+    box-shadow: 3px 3px 3px #CCC;
+	z-index: 99;
+    border: 4px solid #CEA355;
+    transition:all 1.1s ease; 
+}
+
+.btn-email:hover {
+    background-color:  #CEA355;
+    color: #ffffff;
+    transform:rotate(360deg);
+}
+
+.btn-email:active {
+  background-color:  #CEA355;
+  box-shadow: 0 5px #666;
+  color: #ffffff;
+  transform: translateY(4px);
+}
+
+/* CARDS */
+
+.card-body p{
+    text-align: justify;
+}
+.text-justify{
+    text-align: justify;
+}
+.card-body:hover{
+    box-shadow:3px 3px 18px #cccccc inset;
+}
+
+/* CARROUSEL */
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%58517A' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%58517A' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+/* FORM CONTACT */
+
+.input-form{
+    border: 2px solid #CEA355;
+    border-radius: 5px;
+    color: #aa8849;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.contact-form{
+    background-color: #F9D172;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    border :1px solid #CEA355;
+   }
+.contact-title {
+      background-color:#F1F5FA;
+      color:#4CAF50;
+      font-size:30px;
+      font-weight: bolder;
+      padding:10px;
+}
+.btn-form{
+    background-color: rgb(252, 225, 162)2;
+    color: white;
+    border: 6px solid white;
+    font-weight:bold;
+    letter-spacing: 3px;
+    padding: 10px 20px;
+}
+.btn-form:hover{
+    background-color: #CEA355;
+    color:white;
+}
+
+/** FOOTER **/
+
+footer{
+    background-color:#58517A;
+    color:white;
+    padding:70px 0px;
+}
+
+footer ul li{
+   padding:3px 0px;
+}
+
+.product span , .contact span , .social span{
+  font-weight: bolder; 
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom:10px;
+}
+
+.contact li a , .social li a , .product li a{
+   color:#FFF;
+   letter-spacing: 2px;
+   text-decoration: none;
+}
+
+.social li{
+   float:left;
+}
+
+.product , .contact , .social {
+   list-style: none;
+}
+
+.contact li a:hover{
+    cursor: default;
+}
+
+footer .fa{
+   margin-right: 15px;
+   font-size:2em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    .group-cards {
+       display:none;
+    }
+    footer {
+        background-color: #736aa1;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 778px)  {
+    .carrousel-cards{
+       display:none;
+    }
+    .card{
+        margin:2px !important;
+    }
+    .card-body p{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .car-body h5{
+        font-size:0.8em; 
+    }
+}
+
+@media  (min-width: 779px) {
+    .carrousel-cards{
+        display:none;
+     }
+}
