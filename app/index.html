@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://use.fontawesome.com/12ae5353ae.js"></script>
 </head>
 
 <body>
@@ -147,7 +146,15 @@
             </article>
 
             <hr class="divider">
-
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                </symbol>
+            </svg>
+            <div class="alert d-flex align-items-center alert-hidden" id="alert-custom">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                <div id="alert-msg"></div>
+              </div>
             <article class="row">
                 <div class="col-md-2 col-sm-1 d-none d-sm-block"></div>
                 <div class="col-md-8 col-sm-10 col-xs-12 contact-form p-3">
@@ -158,7 +165,7 @@
                                 placeholder="Tu nombre" />
                         </div>
                         <div class="mb-3">
-                            <input type="email" name="mail" id="mail" required="required"
+                            <input type="email" name="mail" id="email" required="required"
                                 class="form-control input-form" placeholder="Tu mejor Email" />
                         </div>
                         <div class="mb-3">
@@ -171,8 +178,8 @@
                                 placeholder="Mensaje::¡explícame con detalle que necesitas!"></textarea>
                         </div>
                         <div>
-                            <button type="submit" id="submit" name="submit"
-                                class="btn btn-form pull-right mt-3">Enviar</button>
+                            <button type="button" name="btnSend"
+                                class="btn btn-form pull-right mt-3" id="btnSend">Enviar</button>
                         </div>
                         <div class="clear"></div>
                     </form>
@@ -184,8 +191,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <img src="../assets/img/logo_small_footer.png" class="w-50"></span>
-                        <span class="d-block mt-2">Copyright &copy; Cómic Store
+                        <span class="logo-footer">
+                            <img src="../assets/img/logo_small_footer.png" class="w-50">
+                        </span>
+                        <span class="d-block mt-2 date-footer">Copyright &copy; Cómic Store
                             <script>document.write(new Date().getFullYear())</script>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
@@ -241,13 +250,14 @@
             </div>
         </footer>
     </main>
-    
+    <script src="https://use.fontawesome.com/12ae5353ae.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="services/comic-store.service.js"></script>
     <script src="views/comic-store.view.js"></script>
     <script src="controllers/comic-store.controller.js"></script>

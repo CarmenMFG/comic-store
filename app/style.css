@@ -95,7 +95,6 @@ nav.navbar-custom a:hover{
     background-color:#F9D172;
     color: #ffffff; 
 	border-radius: 50%; 
-	letter-spacing: 2px; 
     padding: 18px; 
 	position: fixed;
 	top: 68px;
@@ -221,8 +220,54 @@ footer .fa{
    font-size:2em;
 }
 
+.date-footer {
+   font-size:0.8em;
+}
+
+/* ALERTS */
+.alert-hidden{
+  opacity:0;
+}
+.alert-show {
+  animation-duration: 5s;
+  animation-name: slidein;
+
+}
+@keyframes slidein {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .60;
+    }
+    50% {
+        opacity: .85;
+    }
+   80% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 /* MEDIA QUERIES */
+@media (max-width: 576px) {
+   footer {
+        font-size: 0.8em;
+   }
+   footer .fa{
+        font-size:1.5em;  
+   }
+   .logo-footer img {
+        width: 30% !important;
+   }
+   .date-footer {
+        margin-top:3px;
+        margin-bottom:12px;
+        font-size:0.8em;
+    }
+} 
 
 @media (max-width: 600px) {
     .group-cards {
@@ -230,6 +275,12 @@ footer .fa{
     }
     footer {
         background-color: #736aa1;
+    }
+    .btn-email{
+        padding: 8px;
+    }
+    .btn-email .fa{
+        font-size:1.5em;
     }
 }
 
@@ -252,5 +303,5 @@ footer .fa{
 @media  (min-width: 779px) {
     .carrousel-cards{
         display:none;
-     }
+    }
 }

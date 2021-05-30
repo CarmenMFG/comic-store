@@ -1,11 +1,19 @@
-class PontgrupView {
+class ComicView {
     constructor() {
+        // Cards
         this.cardsMarvel = Array.from(document.getElementsByClassName("marvel"));
         this.cardsDC = Array.from(document.getElementsByClassName("dc"));
         this.cardsStarWars = Array.from(document.getElementsByClassName("star-wars"));
+        // Form
+        this.formName = document.getElementById("name");
+        this.formEmail = document.getElementById("email");
+        this.formSubject = document.getElementById("subject");
+        this.formMessage = document.getElementById("message");
+        this.btnSendEmail = document.getElementById("btnSend");
     }
+    
 
-    display() {
+    display() { //Display cards (Marvel,DC and Star Wars) 
         let html;
 
         // Marvel
@@ -67,5 +75,18 @@ class PontgrupView {
                 a.setAttribute("target", "_blank");
                 a.setAttribute("class", "btn-star-wars");
             });
+    }
+
+    bindClickSendEmail(handler) {
+        this.btnSendEmail.addEventListener("click", event => {
+            event.preventDefault(); 
+            const contact = {
+                name: this.formName.value,
+                subject: this.formSubject.value,
+                message: this.formMessage.value,
+                email: this.formEmail = document.getElementById("email").value
+            }
+            handler(contact);  
+        })
     }
 }

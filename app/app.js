@@ -1,8 +1,9 @@
 (async () => {
     try {
-      const pontgrupView = new PontgrupView();
-      const pontgrupService =new PontgrupService();
-      new PontgrupController(pontgrupService, pontgrupView);
+      const comicView = new ComicView();
+      const comicService =new ComicService();
+      new ComicController(comicService, comicView);
+            
     } catch (error) {
       console.error(error);
     }

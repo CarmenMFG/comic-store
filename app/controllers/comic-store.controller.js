@@ -1,15 +1,15 @@
-class PontgrupController{
+class ComicController{
 
     constructor(service,view){
         this.service=service;
         this.view =view;
         this.view.display();
-      
-     //  this.view.bindClickCard(this.handlerClickCard);
+        this.view.bindClickSendEmail(this.handlerClickSendEmail);
     }
    
-    /*handlerClickCard=(url)=>{
-     this.service.goURL(url);
-    }*/
-     
+    handlerClickSendEmail = (contact) => {
+       const result = this.service.sendEmail(contact);
+       this.service.showAlert(result);
+    }
+
 }
