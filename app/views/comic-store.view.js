@@ -11,7 +11,7 @@ class ComicView {
         this.formMessage = document.getElementById("message");
         this.btnSendEmail = document.getElementById("btnSend");
     }
-    
+
 
     display() { //Display cards (Marvel,DC and Star Wars) 
         let html;
@@ -63,30 +63,33 @@ class ComicView {
                     <span class="js-link" data-url="https://es.wikipedia.org/wiki/Star_Wars">Más..</span>`;
 
         this.cardsStarWars.forEach(card => card.innerHTML = html);
-        
-        // Create Links
-        [].forEach.call(document.querySelectorAll('.js-link'), function (e) {
-                var a = document.createElement('a');
-                a.innerHTML = e.innerHTML;
-                e.parentNode.insertBefore(a, e);
-                e.parentNode.removeChild(e);
+        this.createLink(); 
     
-                a.setAttribute("href", e.dataset.url);
-                a.setAttribute("target", "_blank");
-                a.setAttribute("class", "btn-star-wars");
-            });
+    }
+
+    createLink(){
+        [].forEach.call(document.querySelectorAll('.js-link'), function (e) {
+            var a = document.createElement('a');
+            a.innerHTML = e.innerHTML;
+            e.parentNode.insertBefore(a, e);
+            e.parentNode.removeChild(e);
+
+            a.setAttribute("href", e.dataset.url);
+            a.setAttribute("target", "_blank");
+            a.setAttribute("class", "btn-star-wars");
+        });
     }
 
     bindClickSendEmail(handler) {
         this.btnSendEmail.addEventListener("click", event => {
-            event.preventDefault(); 
+            event.preventDefault();
             const contact = {
                 name: this.formName.value,
                 subject: this.formSubject.value,
                 message: this.formMessage.value,
                 email: this.formEmail = document.getElementById("email").value
             }
-            handler(contact);  
+            handler(contact);
         })
     }
 }
